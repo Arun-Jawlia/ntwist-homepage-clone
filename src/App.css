@@ -4,9 +4,10 @@
 
 
 :root{
+  
   --header-height: 3rem;
 
-  /* Text Color  */
+  /* Color and text color */
   --primary-color: #fff;
   --secondary-color: #ff3a2d;
   --extra-color: #6f7f92;
@@ -18,7 +19,7 @@
   --primary-font-family : 'Roboto';
   --secondary-font-family : 'sans-serif';
   --h1-big-font-size: 43px;
-  --h2-big-font-size: 38px;
+  --h2-big-font-size: 40px;
   --normal-font-size: 16px;
 
 
@@ -26,11 +27,13 @@
   --font-normal: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
+  --font-bold: 700;
 
 
 }
 
 
+/* Universal CSS  */
 
 * {
   margin: 0;
@@ -39,31 +42,53 @@
 }
 
 
+/* Body CSS */
+body{
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+/* Root/ HTML CSS */
 html{
   scroll-behavior: smooth;
 }
 
+
+/* Primary Button */
 .primary-btn{
   background-color: #007aff;
   color: var(--primary-color);
+  padding: 12px 40px;
+  border-radius: 2px;
 }
 
+
+/* Secondary Btn */
 .secondary-btn{
- background-color:  #ff3a2d;
- color: var(--primary-color);
- font-size: 15px;
- font-family: var(--primary-font);
+  background-color:  #ff3a2d;
+  color: var(--primary-color);
+  font-size: 15px;
+  font-family: var(--primary-font);
+  padding: 10px 20px;
+  border-radius: 2px;
 }
 
+
+/* H1 */
 h1{
   font-size: var(--h1-big-font-size);
 }
 
+/* h2 */
 h2{
-  font-size: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: var(--h2-big-font-size);
 }
 
-p{
+
+/* P and Li */
+p, li{
   font-size: var(--normal-font-size);
 }
 
@@ -73,7 +98,10 @@ ul{
 
 a{
   text-decoration: none;
+  font-size: var(--normal-font-size);
+  font-family: var(--primary-font-family);
 }
+
 
 button{
   cursor: pointer;
@@ -82,9 +110,15 @@ button{
 }
 
 
+
+
 /* Layout */
 
 .container{
   max-width: 90%;
   margin: auto;
+}
+
+.App{
+  height: 200vh;
 }

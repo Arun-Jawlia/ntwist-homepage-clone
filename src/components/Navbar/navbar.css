@@ -1,0 +1,32 @@
+.header-container {
+  height: var(--header-height);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  filter: blur(0px);
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+
+.logo a img {
+  height: 50px;
+}
+
+.header-right ul {
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+
+.header-right ul li {
+  padding: 0.4rem;
+  font-weight: var(--font-medium);
+}
+
+.header-right ul li a {
+  color: white;
+  letter-spacing: 1px;
+}
