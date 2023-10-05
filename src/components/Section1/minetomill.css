@@ -1,0 +1,10 @@
+.section-mill-mine div:first-child h1{
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    line-height: 50px;
+    letter-spacing: 2px;
+    }
+    .section-mill-mine div:first-child p{
+        line-height: 27px;
+    margin-bottom: 3rem;
+    }

@@ -5,7 +5,7 @@ import Logo from "../../assets/asset 1.png";
 // Navbar 
 const Navbar = () => {
   return (
-    <div className="header-container">
+    <nav className="header-container">
       <div className="header-left">
         <div className="logo">
           <a href="#">
@@ -32,7 +32,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 
