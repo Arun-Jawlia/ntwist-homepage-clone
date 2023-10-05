@@ -69,7 +69,6 @@ min-height: 200px;
 position: absolute;
 top: -100%;
 width: 100%;
-position: fixed;
 background-color: white;
 z-index: 100;
 transition: 1s all ease;
