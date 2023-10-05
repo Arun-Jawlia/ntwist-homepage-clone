@@ -1,46 +1,80 @@
-.home-container{
-    height: 100vh;
-    width: 100%;
-    background-image: url('../../assets/asset\ 5.jpeg');
+.home-container {
+  width: 100%;
+  background-image: url("../../assets/asset\ 5.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-    }
+}
 
-    .home-main-container
-    {
-        backdrop-filter:brightness(50%);
-        height: 100vh;
-        width: 100wh;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        align-items: center;
-        /* column-gap: 1rem; */
-        justify-content: space-around;
-        padding: 4rem 2rem 2rem 2rem;
+.home-main-container {
+  backdrop-filter: brightness(50%);
+  height: 100vh;
+  width: 100wh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 2rem 2rem 2rem;
+}
 
-    }
+.home-container-left h1 {
+  color: var(--primary-color);
+  font-weight: var(--font-bold);
+  font-size: 40px;
+}
 
+.home-container-left h1 + h1 {
+  margin-bottom: 1.5rem;
+}
 
- 
+.home-container-right img {
+  width: 100%;
+}
 
-    .home-container-left h1{
-        color: var(--primary-color);
-        font-weight: var(--font-bold);
-        font-size: 40px;
+/* Media queries and responsiveness */
+
+@media only screen and (max-width:1024px) {
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width:991px) {
+  /*Tablets [601px -> 1200px]*/
+  .home-main-container{
+    padding: 3rem 2rem 2rem 2rem;
+  }
+}
+@media only screen and (max-width:778px) {
+  /*Big smartphones [426px -> 600px]*/
+  .home-main-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .home-container-right img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:480px) {
+  /*Small smartphones [325px -> 425px]*/
+
+  .home-main-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     
-    }
-     
-    .home-container-left h1+ h1{
-        margin-bottom: 1.5rem;
-    }
+  }
 
+  .home-main-container div:first-child{
+    align-items: flex-end;
+    
+  }
+  .home-main-container div:last-child{
+    align-items: flex-start;
+    justify-content: flex-start;
 
-
-    .home-container-right img{
-        width: 100%;
-        height: 100%;
-    }
-
-
+  }
+ 
+  .home-container-left h1{
+    font-size: 27px;
+ }
+}

@@ -3,6 +3,7 @@ import "./footer.css";
 import nTwistLogo from "../../assets/asset 1.png";
 import { AiFillLinkedin } from 'react-icons/ai'
 import { BiLogoTwitter } from 'react-icons/bi'
+import { GiHamburgerMenu}  from 'react-icons/gi'
 
 const Footer = () => {
   return (
@@ -41,6 +42,7 @@ const Footer = () => {
           <a href="#">
           <AiFillLinkedin/>
           </a>
+         
          </div>
       </div>
 

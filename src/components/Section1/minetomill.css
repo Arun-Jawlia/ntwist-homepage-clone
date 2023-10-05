@@ -8,3 +8,51 @@
         line-height: 27px;
     margin-bottom: 3rem;
     }
+
+
+    .section-mineral-processing {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: 
+        'first last'
+      ;
+    }
+    
+    .section-mill-mine div:first-child{
+      grid-area: first;
+    }
+    .section-mill-mine div:last-child{
+      grid-area: last;
+    }
+    
+
+
+/* Media queries and responsiveness */
+
+@media only screen and (max-width: 1199px) {
+    /*Big Screen [1024px -> 1200px]*/
+  }
+  @media only screen and (max-width: 1024px) {
+    /*Big Tablet [778px -> 1024px]*/
+    .section-mill-mine {
+      grid-template-areas: 
+        'first'
+        'last'
+      ;
+    }
+      
+  }
+  @media only screen and (max-width: 778px) {
+    /*Big smartphones [480px -> 778px]*/
+    .section-mill-mine {
+      grid-template-areas: 
+        'last'
+        'first'
+      ;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    /*Small smartphones [325px -> 480px]*/
+   
+  }
+  

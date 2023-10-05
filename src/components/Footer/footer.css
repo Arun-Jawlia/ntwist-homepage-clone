@@ -1,5 +1,5 @@
 footer {
-  height: 350px;
+  min-height: 350px;
   width: 100%;
   background-color: var(--footer-color);
   align-items: center;
@@ -26,6 +26,7 @@ footer {
   color: white;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer-link ul li {
@@ -73,4 +74,20 @@ footer {
 .footer-copyright{
     color: var(--extra-color);
     text-align: center;
+}
+
+
+
+
+
+/* Media queries and responsiveness */
+
+@media only screen and (max-width: 991px) {
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 768px) {
+  /*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 480px) {
+  /*Small smartphones [325px -> 425px]*/
 }

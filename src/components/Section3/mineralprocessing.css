@@ -8,3 +8,57 @@
         line-height: 27px;
     margin-bottom: 3rem;
     }
+
+
+    .section-mineral-processing {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: 
+        'first last'
+      ;
+    }
+    
+    .section-mineral-processing div:first-child{
+      grid-area: first;
+    }
+    .section-mineral-processing div:last-child{
+      grid-area: last;
+    }
+    
+    
+    
+    
+
+    
+
+
+  
+/* Media queries and responsiveness */
+
+@media only screen and (max-width: 1199px) {
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width:1024px) {
+  /*Big smartphones [426px -> 600px]*/
+  .section-mineral-processing {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+    'first'
+    'last'
+  ;
+  }
+    
+}
+@media only screen and (max-width:778px) {
+  /*Big smartphones [426px -> 600px]*/
+  .section-mineral-processing {
+    grid-template-areas: 
+      'last'
+      'first'
+    ;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /*Small smartphones [325px -> 425px]*/
+}

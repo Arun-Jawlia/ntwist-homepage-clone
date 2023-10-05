@@ -153,6 +153,7 @@ button{
   padding: 12px 24px;
   border-radius: 2px;
   font-family: 'Roboto', sans-serif;
+  border-radius: 2px;
 }
 
 
@@ -163,4 +164,40 @@ button{
   left: 20px;
   color: black;
   padding: 10px 30px;
+}
+
+
+
+
+/* Media Queries and Responsivenss */
+
+/* Media queries and responsiveness */
+
+@media only screen and (max-width: 1199px) {
+  /*Bigscreen [1024px -> 1199px]*/
+}
+
+
+@media only screen and (max-width: 1024px) {
+  /*Big tablet [778px -> 1024px]*/
+  .grid {
+    grid-template-columns: repeat(1,1fr);
+  }
+    
+}
+@media only screen and (max-width: 778px) {
+  /*Big phones [480px -> 778px]*/
+  .container{
+    /* max-width: 95%; */
+    margin: auto;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /*Small phones [325px -> 480px]*/
+
+  .secondary-btn{
+    font-size: 13px;
+    padding: 10px 20px;
+  }
 }

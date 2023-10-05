@@ -13,12 +13,6 @@
   transition: 0.4s all ease-out;
 }
 
-.bg-change
-{
-  background-color: white;
-  
-}
-
 .logo a img {
   height: 50px;
 }
@@ -26,7 +20,7 @@
 .header-right ul {
   display: flex;
   gap: 2rem;
-  color: white;
+  /* color: white; */
 }
 
 .header-right ul li {
@@ -34,16 +28,120 @@
   font-weight: var(--font-medium);
 }
 
-.header-right ul li a {
+ .color-light{
   color: white;
   letter-spacing: 1px;
 }
 
-.link-color{
+
+
+.Hamburger-menu{
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 2rem;
+  color: #003358;
+}
+
+.Hamburger-dark{
+  color:white;
+}
+
+/* Color change on scroll */
+
+.bg-change
+{
+  background-color: white;
+  
+}
+
+.color-dark{
+  color:#003358;
+  letter-spacing: 1px;
+}
+
+
+/* Second Navbar */
+
+.second-navbar{
+border: 1px solid white;
+min-height: 200px;
+position: absolute;
+top: -100%;
+width: 100%;
+position: fixed;
+background-color: white;
+z-index: 100;
+transition: 1s all ease;
+}
+
+.second-navbar-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 30px;
+}
+
+.close-btn{
+  margin-right: 1rem;
+}
+
+.second-navbar-header img{
+  height: 50px;
+}
+  
+
+
+.second-navbar-nav-link{
+
+  padding: 1.5rem;
+}
+
+.second-navbar-nav-link ul li {
+text-align: left;
+line-height: 30px;
+color: #003358;
+}
+
+.second-navbar-nav-link ul li a{
   color: #003358;
 }
 
 
-.color-white{
-  color: white;
+
+.second-navbar-active{
+min-height: 200px;
+position: absolute;
+top: 0;
+width: 100%;
+background-color: white;
+z-index: 1000;
+}
+
+/* Media queries and responsiveness */
+
+@media only screen and (max-width: 1024px) {
+  /*Tablets [778px -> 1200px]*/
+  .Hamburger-menu{
+    display: block;
+  }
+
+  .header-right {
+    /* display: none; */
+    display: none;
+  }
+
+ 
+
+}
+@media only screen and (max-width: 778px) {
+  /*Big smartphones [426px -> 600px]*/
+ 
+}
+@media only screen and (max-width: 480px) {
+  /*Small smartphones [325px -> 425px]*/
+  .Hamburger-menu{
+    margin-right: 0.75rem;
+  }
 }
