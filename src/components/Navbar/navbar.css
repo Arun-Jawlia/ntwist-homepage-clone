@@ -9,6 +9,14 @@
   position: fixed;
   top: 0px;
   z-index: 100;
+  background-color: transparent;
+  transition: 0.4s all ease-out;
+}
+
+.bg-change
+{
+  background-color: white;
+  
 }
 
 .logo a img {
@@ -29,4 +37,13 @@
 .header-right ul li a {
   color: white;
   letter-spacing: 1px;
+}
+
+.link-color{
+  color: #003358;
+}
+
+
+.color-white{
+  color: white;
 }

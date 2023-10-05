@@ -10,7 +10,7 @@
 
     .home-main-container
     {
-        backdrop-filter: blur(3px);
+        backdrop-filter:brightness(50%);
         height: 100vh;
         width: 100wh;
         display: grid;
@@ -25,14 +25,14 @@
 
  
 
-    .home-container-left h2{
+    .home-container-left h1{
         color: var(--primary-color);
         font-weight: var(--font-bold);
-        font-size: 48px;
+        font-size: 40px;
     
     }
      
-    .home-container-left h2+ h2{
+    .home-container-left h1+ h1{
         margin-bottom: 1.5rem;
     }
 

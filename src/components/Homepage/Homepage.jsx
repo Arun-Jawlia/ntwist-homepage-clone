@@ -13,13 +13,13 @@ const Homepage = () => {
       <div className="home-container">
         <div className="home-main-container">
           <div className="home-container-left">
-            <h2>Data-powered solutions</h2>
-            <h2>for Industrial Excellence</h2>
+            <h1>Data-powered solutions</h1>
+            <h1>for Industrial Excellence</h1>
 
             <button className="primary-btn">Read More</button>
           </div>
           <div className="home-container-right">
-            <img src={nTwistImg} alt=" HomePage Image" />
+            <img src={nTwistImg}  alt=" HomePage Image" />
           </div>
         </div>
       </div>

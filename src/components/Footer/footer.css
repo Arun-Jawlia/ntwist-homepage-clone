@@ -1,6 +1,76 @@
-footer{
-    height: 300px;
-    width: 100%;
-    border: 1px solid black;
-    background-color: #;
+footer {
+  height: 350px;
+  width: 100%;
+  background-color: var(--footer-color);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.footer-Img {
+  height: 50px;
+  margin: auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footer-link {
+  margin-top: 0.6rem;
+}
+
+.footer-link ul {
+  display: flex;
+  gap: 1rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link ul li {
+  padding: 0.4rem;
+  font-weight: var(--font-medium);
+}
+
+.footer-link ul li a {
+  color: white;
+}
+
+.footer-address {
+  color: var(--extra-color);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.footer-social-icon div {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-icon div a {
+  color: white;
+  font-size: 20px;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 2px;
+  transition: 0.5s all ease-in;
+  background-color: #0c1330;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-icon div a:hover {
+  background-color: rgb(41, 59, 70);
+}
+
+
+.footer-copyright{
+    color: var(--extra-color);
+    text-align: center;
 }

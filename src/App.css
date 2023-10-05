@@ -66,6 +66,7 @@ h2{
   color: var(--primary-color);
   font-size: var(--h2-big-font-size);
   font-family: 'Inter' ,sans-serif;
+  font-weight: 500;
 }
 
 
@@ -116,8 +117,9 @@ button{
 .customImg{
   display: block;
   width: 100%;
-  padding: 0.2rem;
-  filter: brightness(80%);
+  /* height: 300px; */
+  /* padding: 0.2rem; */
+  filter: brightness(90%);
 }
 
 .grid{
@@ -151,4 +153,14 @@ button{
   padding: 12px 24px;
   border-radius: 2px;
   font-family: 'Roboto', sans-serif;
+}
+
+
+.homepage-btn{
+  position: fixed;
+  bottom: 20px;
+  z-index: 100;
+  left: 20px;
+  color: black;
+  padding: 10px 30px;
 }
