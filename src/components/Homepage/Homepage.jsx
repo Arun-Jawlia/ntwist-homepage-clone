@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import "./homepage.css";
 import Navbar from "../Navbar/Navbar";
 import nTwistImg from "../../assets/asset 4.png";
+// import nTwistImg from "../../assets/asset 4.png";
+// import nTwistImg from "../../assets/home1.jpg";
+// import nTwistImg from "../../assets/home2.jpg";
+// import nTwistImg from "../../assets/home3.jpg";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import flagImg from '../../assets/asset 12.svg'
 

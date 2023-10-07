@@ -1,6 +1,8 @@
 .home-container {
   width: 100%;
-  background-image: url("../../assets/mining.jpg");
+  background-image: url("../../assets/home1.jpg");
+  /* background-image: url("../../assets/home2.jpg"); */
+  /* background-image: url("../../assets/home3.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
