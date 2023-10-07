@@ -54,9 +54,8 @@
   display: none;
 }
 
-
 /* flag-lang */
-.flag-lang{
+.flag-lang {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
@@ -66,21 +65,19 @@
   font-size: 26px;
   z-index: 1000;
   color: black;
-  border: 1px solid white;
   background-color: white;
   padding: 0.3rem 0.6rem;
   column-gap: 0.7rem;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
-
 }
 
-.flag-lang img{
+.flag-lang img {
   height: 24px;
 }
 
-.flag-lang h2{
+.flag-lang h2 {
   color: black;
   font-size: 24px;
 }
@@ -114,13 +111,10 @@
 
   .home-main-container {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
 
     padding: 1rem;
-
   }
-
- 
 
   .home-main-container div:first-child {
     align-items: flex-end;
