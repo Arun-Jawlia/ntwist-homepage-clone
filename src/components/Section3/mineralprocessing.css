@@ -1,64 +1,46 @@
-.section-mineral-processing div:first-child h1{
-    margin-bottom: 1rem;
-    color: var(--secondary-color);
-    line-height: 50px;
-    letter-spacing: 2px;
-    }
-    .section-mineral-processing div:first-child p{
-        line-height: 27px;
-    margin-bottom: 3rem;
-    }
-
-
-    .section-mineral-processing {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      grid-template-areas: 
-        'first last'
-      ;
-    }
-    
-    .section-mineral-processing div:first-child{
-      grid-area: first;
-    }
-    .section-mineral-processing div:last-child{
-      grid-area: last;
-    }
-    
-    
-    
-    
-
-    
-
-
-  
-/* Media queries and responsiveness */
-
-@media only screen and (max-width: 1199px) {
-  /*Tablets [601px -> 1200px]*/
+.section-mineral-processing div:first-child h1 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  line-height: 50px;
+  letter-spacing: 2px;
 }
-@media only screen and (max-width:1024px) {
-  /*Big smartphones [426px -> 600px]*/
+.section-mineral-processing div:first-child p {
+  line-height: 27px;
+  margin-bottom: 3rem;
+}
+
+.section-mineral-processing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "first last";
+}
+
+.section-mineral-processing div:first-child {
+  grid-area: first;
+}
+.section-mineral-processing div:last-child {
+  grid-area: last;
+}
+
+
+
+
+/* Media queries and responsiveness */
+@media only screen and (max-width: 1024px) {
+  /*Screen [991px -> 1024px]*/
   .section-mineral-processing {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-areas: 
-    'first'
-    'last'
-  ;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "first"
+      "last";
   }
-    
 }
-@media only screen and (max-width:778px) {
-  /*Big smartphones [426px -> 600px]*/
+@media only screen and (max-width: 778px) {
+  /*Tablets [480px -> 778px]*/
   .section-mineral-processing {
-    grid-template-areas: 
-      'last'
-      'first'
-    ;
+    grid-template-areas:
+      "last"
+      "first";
   }
-}
-@media only screen and (max-width: 480px) {
-  /*Small smartphones [325px -> 425px]*/
 }

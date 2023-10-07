@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat&family=Poppins&family=Roboto&display=swap');
+/* import font style - Inter , Poppins and Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat&family=Poppins&family=Roboto&display=swap");
 
-
-
-:root{
-  
+/* Root Variables */
+:root {
+  /* header height */
   --header-height: 3rem;
 
   /* Color and text color */
@@ -14,150 +14,127 @@
   --btn-primary-color: #007aff;
   --footer-color: #081528;
 
-
   /* Font Color and Family */
-  --primary-font-family : 'Roboto';
-  --secondary-font-family : 'sans-serif';
+  --primary-font-family: "Roboto";
+  --secondary-font-family: "sans-serif";
   --h1-big-font-size: 43px;
   --h2-big-font-size: 40px;
   --normal-font-size: 16px;
 
-
-/* Font Weight */
+  /* Font Weight */
   --font-normal: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
-
-
 }
 
-
 /* Universal CSS  */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-/* Body CSS */
-
-
-
 /* Root/ HTML CSS */
-html{
+html {
   scroll-behavior: smooth;
 }
 
-
-
-
 /* H1 */
-h1{
+h1 {
   font-size: var(--h1-big-font-size);
-  font-family: 'Inter' ,sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
 }
 
 /* h2 */
-h2{
+h2 {
   color: var(--primary-color);
   font-size: var(--h2-big-font-size);
-  font-family: 'Inter' ,sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
 }
 
-
-/* P and Li */
-a{
+/* a */
+a {
   font-size: var(--normal-font-size);
-  font-family: 'Inter' ,sans-serif;
-}
-p{
-  font-size: var(--normal-font-size);
-  font-family: 'Roboto' ,sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-ul{
+/* P tag */
+p {
+  font-size: var(--normal-font-size);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Un ordered list  */
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   font-size: var(--normal-font-size);
   font-family: var(--primary-font-family);
 }
 
-
-button{
+/* Button */
+button {
   cursor: pointer;
   border: none;
   outline: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-
-
-
-/* Layout */
-
-.container{
+/* Basic Layout */
+.container {
   /* max-width: 95%; */
   margin: auto;
   padding: 2.5rem;
 }
 
-.App{
+/* .App {
   height: 200vh;
-}
+} */
 
-
-.customImg{
+.customImg {
   display: block;
   width: 100%;
-  /* height: 300px; */
-  /* padding: 0.2rem; */
-  filter: brightness(90%);
+  filter: brightness(70%);
 }
 
-.grid{
+.grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: auto;
   text-align: justify;
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  
-
-
 }
 
 /* Primary Button */
-.primary-btn{
+.primary-btn {
   background-color: #007aff;
   color: var(--primary-color);
   padding: 12px 40px;
   border-radius: 2px;
 }
 
-
 /* Secondary Btn */
-.secondary-btn{
-  background-color:  #ff3a2d;
+.secondary-btn {
+  background-color: #ff3a2d;
   color: var(--primary-color);
   font-size: 15px;
   font-family: var(--primary-font);
   padding: 12px 24px;
   border-radius: 2px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   border-radius: 2px;
 }
 
-
-.homepage-btn{
+/* Scroll to Top Button */
+.homepage-btn {
   position: fixed;
   bottom: 20px;
   z-index: 100;
@@ -166,37 +143,37 @@ button{
   padding: 10px 30px;
 }
 
-
-
-
-/* Media Queries and Responsivenss */
-
+/* General Media Queries */
 /* Media queries and responsiveness */
 
 @media only screen and (max-width: 1199px) {
   /*Bigscreen [1024px -> 1199px]*/
 }
 
-
 @media only screen and (max-width: 1024px) {
   /*Big tablet [778px -> 1024px]*/
   .grid {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-    
 }
+
 @media only screen and (max-width: 778px) {
   /*Big phones [480px -> 778px]*/
-  .container{
+  .container {
     /* max-width: 95%; */
     margin: auto;
     padding: 1rem;
   }
 }
+
+
 @media only screen and (max-width: 480px) {
   /*Small phones [325px -> 480px]*/
 
-  .secondary-btn{
+  .primary-btn{
+    padding: 10px 30px;
+  }
+  .secondary-btn {
     font-size: 13px;
     padding: 10px 20px;
   }

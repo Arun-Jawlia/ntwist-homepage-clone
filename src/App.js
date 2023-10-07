@@ -9,26 +9,23 @@ import OilAndGas from "./components/Section4/OilAndGas";
 function App() {
   return (
     <div className="App">
-      {/* Home Page Import on App Js */}
+      {/* Home Page  */}
       <Homepage />
 
-      {/* Section 1 Mine to Mill  */}
+      {/* Section 1- Mine to Mill  */}
       <MineToMill />
 
-      {/* Section2 Sustainability */}
+      {/* Section2 -  Sustainability */}
       <Sustainablity />
 
-      {/* Section 3 Mineral Processing  */}
+      {/* Section 3 - Mineral Processing  */}
       <MineralProcessing />
-      
 
-      {/* Section 4 Oil and Gas*/}
+      {/* Section 4 -  Oil and Gas*/}
       <OilAndGas />
 
       {/* Footer */}
-      <Footer/>
-
-     
+      <Footer />
     </div>
   );
 }

@@ -1,3 +1,4 @@
+/* Home Container */
 .header-container {
   height: var(--header-height);
   width: 100%;
@@ -5,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 2rem;
-  filter: blur(0px);
+  /* filter: blurpx); */
   position: fixed;
   top: 0px;
   z-index: 100;
@@ -26,6 +27,34 @@
 .header-right ul li {
   padding: 0.4rem;
   font-weight: var(--font-medium);
+  position: relative;
+}
+
+.header-right>ul li>a::after{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -10px;
+  left: 0rem;
+  background-color: #003358;
+  transition: 0.4s all ease-out;
+
+  /* border-bottom: 2px solid white; */
+  
+}
+
+
+
+
+.header-right>ul li>a:hover::after
+{
+  width: 100%;
+}
+
+.header-right>ul li .home-active::after
+{
+width: 100%;
 }
 
  .color-light{
@@ -71,7 +100,7 @@ top: -100%;
 width: 100%;
 background-color: white;
 z-index: 100;
-transition: 1s all ease;
+transition: 1s all ease-in-out;
 }
 
 .second-navbar-header{

@@ -8,7 +8,7 @@ import { GiHamburgerMenu}  from 'react-icons/gi'
 const Footer = () => {
   return (
     <footer>
-      <img src={nTwistLogo} className="footer-Img" alt="" />
+      <img src={nTwistLogo} className="footer-Img" alt='Logo of NTwist organisation' />
 
       <div className="footer-link">
         <ul>

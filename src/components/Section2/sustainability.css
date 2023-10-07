@@ -1,31 +1,21 @@
-.section-sustainability div:last-child h1{
-    margin-bottom: 1rem;
-    color: var(--secondary-color);
-    line-height: 50px;
-    letter-spacing: 2px;
-    }
-    .section-sustainability div:last-child p{
-        line-height: 27px;
-    margin-bottom: 1rem;
-    }
+.section-sustainability div:last-child h1 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+.section-sustainability div:last-child p {
+  line-height: 27px;
+  margin-bottom: 1rem;
+}
 
 
 /* Media queries and responsiveness */
 
-@media only screen and (max-width: 1199px) {
-  /*Tablets [601px -> 1200px]*/
-}
 @media only screen and (max-width: 1024px) {
-  /*Big smartphones [426px -> 600px]*/
+  /*Big display [991px -> 1024px]*/
   .section-sustainability {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-    
-}
-@media only screen and (max-width: 778px) {
-  /*Big smartphones [426px -> 600px]*/
-}
-@media only screen and (max-width: 480px) {
-  /*Small smartphones [325px -> 425px]*/
 }

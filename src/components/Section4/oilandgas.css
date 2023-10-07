@@ -3,37 +3,25 @@
   color: var(--secondary-color);
   line-height: 50px;
   letter-spacing: 2px;
-  
 }
 .section-oil-and-gas div:last-child p {
   line-height: 27px;
   margin-bottom: 1rem;
-
 }
 
-/* .section-oil-and-gas div:first-child{
-  grid-area: first;
-}
-.section-oil-and-gas div:last-child{
-  grid-area: last;
-} */
 
-/* Media queries and responsiveness */
 
 /* Media queries and responsiveness */
 
 @media only screen and (max-width: 1199px) {
-  /*Tablets [601px -> 1200px]*/
+  /*Tablets [1024px -> 1199px]*/
 }
 @media only screen and (max-width: 1024px) {
-  /*Big smartphones [426px -> 600px]*/
-
-    
+  /*Big smartphones [991px -> 1024px]*/
 }
 @media only screen and (max-width: 778px) {
-  /*Big smartphones [426px -> 600px]*/
+  /*Big smartphones [480px -> 778px]*/
 }
 @media only screen and (max-width: 480px) {
   /*Small smartphones [325px -> 425px]*/
 }
-

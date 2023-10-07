@@ -1,6 +1,6 @@
 .home-container {
   width: 100%;
-  background-image: url("../../assets/asset\ 5.jpeg");
+  background-image: url("../../assets/mining.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,9 +8,9 @@
 }
 
 .home-main-container {
-  backdrop-filter: brightness(50%);
+  backdrop-filter: brightness(60%);
   height: 100vh;
-  width: 100wh;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -32,49 +32,105 @@
   width: 100%;
 }
 
-/* Media queries and responsiveness */
-
-@media only screen and (max-width:1024px) {
-  /*Tablets [601px -> 1200px]*/
+/* Bottom to Top button */
+.btm-to-top {
+  position: fixed;
+  bottom: 1rem;
+  background-color: lightseagreen;
+  padding: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  background-color: #003358;
+  z-index: 1000;
+  border-radius: 50%;
+  color: gray;
+  transition: 2s all ease-in;
 }
-@media only screen and (max-width:991px) {
-  /*Tablets [601px -> 1200px]*/
-  .home-main-container{
+
+.hide {
+  display: none;
+}
+
+
+/* flag-lang */
+.flag-lang{
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  z-index: 1000;
+  color: black;
+  border: 1px solid white;
+  background-color: white;
+  padding: 0.3rem 0.6rem;
+  column-gap: 0.7rem;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+
+}
+
+.flag-lang img{
+  height: 24px;
+}
+
+.flag-lang h2{
+  color: black;
+  font-size: 24px;
+}
+
+/* Media queries and responsiveness */
+@media only screen and (max-width: 991px) {
+  /*Tablets [991px -> 1200px]*/
+  .home-main-container {
     padding: 3rem 2rem 2rem 2rem;
   }
 }
-@media only screen and (max-width:778px) {
-  /*Big smartphones [426px -> 600px]*/
-  .home-main-container{
+
+@media only screen and (max-width: 778px) {
+  /*Big smartphones [480px -> 778px]*/
+  .home-main-container {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home-container-left h1 {
+    font-size: 35px;
   }
 
   .home-container-right img {
     width: 100%;
   }
 }
-@media only screen and (max-width:480px) {
-  /*Small smartphones [325px -> 425px]*/
 
-  .home-main-container{
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-    
+@media only screen and (max-width: 480px) {
+  /*Small smartphones [325px -> 480px]*/
+
+  .home-main-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+    padding: 1rem;
+
   }
 
-  .home-main-container div:first-child{
+ 
+
+  .home-main-container div:first-child {
     align-items: flex-end;
-    
   }
-  .home-main-container div:last-child{
+  .home-main-container div:last-child {
     align-items: flex-start;
     justify-content: flex-start;
-
   }
- 
-  .home-container-left h1{
+
+  .home-container-left h1 {
     font-size: 27px;
- }
+  }
 }
